@@ -1,0 +1,1 @@
+Working on a website for a friend. It's also a way for me to get some practice/experience in building a website and deploying it. It's a static website using HTML and CSS. It's still a work in progress.
