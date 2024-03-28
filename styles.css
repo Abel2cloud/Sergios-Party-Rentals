@@ -1,0 +1,74 @@
+.madimi-one-regular {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+*{
+    color:#1d3557;
+    font-family: 'Madimi One', 'sans-serif';
+    
+}
+
+
+body{
+    margin: 0;
+	padding: 0;
+            border: 0%;
+    background-color: #f1faee;
+}
+
+div{
+   width:100%;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p, ul{
+    font-size: 20px;
+}
+
+img{
+    width: 100%;
+  height: auto ;
+  padding: 0px; 
+  margin: 40px;
+  border: 40px;
+  
+  
+}
+
+header, #hero{
+    background-color: #e5e5e5;
+}
+
+#bull{
+    background-color: #457b9d;
+ }
+
+#moonwalks{
+    background-color: #a8dadc;
+}
+
+#ct{
+    background-color: #ccd5ae;
+}
+
+header a {
+    float: left;
+    color: rgb(249, 72, 72);
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#title{
+   
+    color: #1d3557;
+    text-align: center;
+    font-size: 80px;
+}
