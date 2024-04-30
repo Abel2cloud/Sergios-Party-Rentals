@@ -1,74 +1,167 @@
-.madimi-one-regular {
-    font-family: "Madimi One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+/*body set up */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden;
 
-*{
-    color:#1d3557;
-    font-family: 'Madimi One', 'sans-serif';
-    
+  color: #1d3557;
+  font-family: "Madimi One", "sans-serif";
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f1faee;
 }
 
-
-body{
-    margin: 0;
-	padding: 0;
-            border: 0%;
-    background-color: #f1faee;
+body {
+  margin: 0;
 }
 
-div{
-   width:100%;
-}
-
-h2{
-    font-size: 30px;
-}
-
-p, ul{
-    font-size: 20px;
-}
-
-img{
-    width: 100%;
-  height: auto ;
-  padding: 0px; 
-  margin: 40px;
-  border: 40px;
-  
-  
-}
-
-header, #hero{
-    background-color: #e5e5e5;
-}
-
-#bull{
-    background-color: #457b9d;
- }
-
-#moonwalks{
-    background-color: #a8dadc;
-}
-
-#ct{
-    background-color: #ccd5ae;
-}
-
+/*header and title layout */
 header a {
-    float: left;
-    color: rgb(249, 72, 72);
-    text-align: center;
-    padding: 5px 10px;
-    text-decoration: none;
-    font-size: 20px;
+  text-align: center;
+  float: left;
+  color: rgb(249, 72, 72);
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 20px;
 }
 
-#title{
-   
-    color: #1d3557;
-    text-align: center;
-    font-size: 80px;
+
+
+#title {
+  color: #1d3557;
+  text-align: center;
+  font-size: 80px;
+}
+
+/*mechanical bull images and layout*/
+
+.bull-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#bull-pic {
+  max-width: 70%;
+  height: auto;
+}
+
+/*video layout*/
+
+.video {
+  text-align: center;
+}
+
+#video {
+  padding-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* image carousel */
+
+
+.carousel {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
+}
+
+.slide > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  transition-delay: 0ms;
+}
+
+.carousel-button {
+  position: absolute;
+  background: none;
+  z-index: 2;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(225, 225, 225, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-button:focus {
+  outline: 1px solid black;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+#moonwalks {
+  background-color: #a8dadc;
+}
+
+#tables-chairs{
+  text-align: center;
+}
+#tc {
+  background-color: #ccd5ae;
+  max-width: 800px;
+  height: auto;
+}
+
+h2,
+p {
+  text-align: center;
+  font-size: 40px;
+}
+
+.sell{
+  text-align: center;
+  font-size: 30px;
+}
+
+#contact{
+  text-align: center;
+}
+
+#card {
+  max-width: 800px;
+  height: auto;
 }
