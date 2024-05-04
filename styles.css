@@ -57,7 +57,7 @@ body {
 }
 
 #bull-pic {
-  max-width: 70%;
+  max-width: 90%;
   height: auto;
 }
 
@@ -159,7 +159,7 @@ body {
 }
 #tc {
   background-color: #a8dadc;
-  max-width: 70%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -187,13 +187,13 @@ p {
 }
 
 #card {
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
 }
 
 .fb-link{
   background-color: #1d3557;
-  max-width: 10%;
+  max-width: 15%;
   border-radius:20%;
 }
 
